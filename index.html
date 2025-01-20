@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            width:100%;
+        }
+
+        .navbar{
+            display: flex;
+            padding: 20px 40px;
+            height: 85px;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            padding-right: 40px;
+        }
+
+        li > a {
+            text-decoration: none;
+            color: black;
+            padding:  10px;
+        }
+
+        a:hover{
+            color: rgb(49, 78, 225);
+        }
+
+      .profile-logo{
+        align-content: center;
+      }
+
+      .profile-logo > img{
+        width: 30px;
+        border-radius: 50%;
+
+      }
+
+
+      .hero-section{
+        position: relative;
+        color: white;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: rgb(49, 78, 225);
+        background-position: center;
+        padding: 17px 40px;
+        width: 100%;
+
+      }
+
+      h1{
+        font-size: 4vw;
+        margin: 18px;
+      }
+
+    .hero-section >  p{
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px 70px;
+        margin-bottom: 38px;
+
+      }
+
+      button{
+        margin-bottom: 38px;
+        padding: 10px 15px;
+        background-color: rgb(236, 200, 41);
+        border: none;
+        border-radius: 7px;
+        font-weight: 700;
+
+      }
+
+
+      .mobile-png{
+        border-radius:50%;
+        align-items: center;
+        
+      }
+      .mobile-png > img{
+        width: 14vw;
+      }
+
+
+      @media (max-width:600px){
+        .hero-section > p{
+            font-size: 4px;
+        }
+      }
+
+
+      .demo-section{
+        padding: 40px;
+
+      }
+
+      .container{
+        justify-content: space-around;
+        display: flex;
+        text-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+
+      .container > img{
+        padding: 10px;
+      }
+/* 1   2  3 */
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/">Savings</a></li>
+                <li><a href="/">International</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-logo">
+            <img id="profile-img" src="/img6.png" alt="profile">
+        </div>
+    </nav>
+    <section class="hero-section">
+        <h1>Regular Saving Account</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sint magni accusantium fugit quia quibusdam molestiae obcaecati voluptas odit aspernatur, incidunt minima error mollitia neque hic vel voluptate atque at?</p>
+        <button>Apply Now</button>
+        <div class="mobile-png">
+            <img src="/png.png" alt="mobile">
+        </div>
+    </section>
+
+
+
+    <section class="demo-section">
+         <h2>Discover the key features</h2>
+
+         <div class="container">
+            <div class="conatiner-item">
+                <img src="/feature_icon_4.png" alt="loading">
+                <h3>Multiple links</h3>
+                <p>Add multiple links in instagram instead of just one</p>
+                <a href="/">Know more</a>
+            </div>
+            <div class="conatiner-item">
+                <img src="/feature_icon_4.png" alt="loading">
+                <h3>Multiple links</h3>
+                <p>Add multiple links in instagram instead of just one</p>
+                <a href="/">Know more</a>
+            </div>
+            <div class="conatiner-item">
+                <img src="/feature_icon_4.png" alt="loading">
+                <h3>Multiple links</h3>
+                <p>Add multiple links in instagram instead of just one</p>
+                <a href="/">Know more</a>
+            </div>
+
+         </div>
+    </section>
+</body>
+</html>
