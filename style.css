@@ -1,1 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #f4f4f4;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: #3150e1;
+  }
+
+.profile{
+align-content: center;
+}
+
+.profile > img{
+width: 30px;
+border-radius: 50%;
+
+}
+
+
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-column {
+    margin-right: 20px;
+  }
+  
+  .dropdown-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .dropdown-column a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-column a:hover {
+    color: #3150e1;
+  }
+
+
+.hero-section{
+position: relative;
+color: white;
+align-items: center;
+text-align: center;
+flex-direction: column;
+background-color: rgb(49, 78, 225);
+background-position: center;
+padding: 17px 40px;
+width: 100%;
+
+}
+
+h1{
+font-size: 4vw;
+margin: 18px;
+}
+
+.hero-section >  p{
+font-size: 14px;
+line-height: 18px;
+padding: 5px 70px;
+margin-bottom: 38px;
+
+}
+
+button{
+margin-bottom: 38px;
+padding: 10px 15px;
+background-color: rgb(236, 200, 41);
+border: none;
+border-radius: 7px;
+font-weight: 700;
+
+}
+
+
+.mobile-png{
+border-radius:50%;
+align-items: center;
+
+}
+.mobile-png > img{
+width: 14vw;
+}
+
+
+@media (max-width:600px){
+.hero-section > p{
+    font-size: 4px;
+}
+}
+
+
+.demo-section{
+padding: 40px;
+
+}
+
+.container{
+justify-content: space-around;
+display: flex;
+text-wrap: wrap;
+flex-wrap: wrap;
+margin: 10px;
+}
+
+.container > img{
+padding: 10px;
+}
 
